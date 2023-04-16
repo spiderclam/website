@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<title>{title('About')}</title>
+	<meta name="description" content="About Spiderclam" />
 </svelte:head>
 <PageContainer title="About Spiderclam" size="small">
 	<a href={resume} target="_blank">Link to my resume</a>

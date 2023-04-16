@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<title>{data.title}</title>
+	<meta name="description" content="Spiderclam's den" />
 </svelte:head>
 
 <PageContainer title="Spiderclam's den">
