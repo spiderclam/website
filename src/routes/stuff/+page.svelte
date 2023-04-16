@@ -1,5 +1,15 @@
-<div
-	class="container mx-auto max-w-screen-xl gap-8 p-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-100 flex flex-grow"
->
-	<h1>STUIFF</h1>
-</div>
+<script>
+	import PageContainer from '$lib/components/page-container.svelte';
+
+	export let data;
+</script>
+
+<svelte:head>
+	<title>{data.title}</title>
+</svelte:head>
+
+<PageContainer title="Stuff">
+	<p>🚧 Not quite there yet.</p>
+
+	<p>This is where I'll (eventually) upload assets and other resources.</p>
+</PageContainer>

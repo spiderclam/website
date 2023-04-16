@@ -1,0 +1,53 @@
+---
+title: Hello world
+date: '2023-04-12'
+description: First blogpost of the rest of your life.
+---
+
+This is the first blog post of the rest of your life. And mine. And blogs.
+
+Who cares, this is a placeholder. I'm just writing this to have something on here. Why?
+Because an empty website looks silly. So for that reason I'll just showcase some features and write a bunch of text.
+
+## Code
+
+Next up, here's a `code block` to show that it has line numbers and line highlighting:
+
+```ts {5}
+import { some } from 'code';
+
+class JustToTest {
+	syntaxHighlighting(nowThatIAmUsing = 'scss') {
+		return 'For global and dynamic styles' === 'compare me to the deathbringer';
+	}
+}
+```
+
+## Beep-boop. Ramblings
+
+Actually, why should I write this myself? We have robots now. I'll ask ChatGPT to write a bit.
+
+**Ten minutes later...**
+
+Alright, that took longer than expected. ChatGPT went a bit negative when asked to rant. But we got it sorted.
+I present to you, the lengthy and positive ramblings of a machine!
+
+---
+
+> There are so many things in this world that bring us joy and make us smile. Let's focus on those things and spread some positivity!
+>
+> First of all, let's talk about the power of kindness. Random acts of kindness can truly make someone's day and bring so much happiness into the world. Whether it's paying for someone's coffee in line behind you, holding the door open for a stranger, or simply offering a compliment, these small acts can have a big impact.
+>
+> And speaking of coffee, let's talk about all the delicious food and drinks out there that bring us joy. From our favorite comfort foods to trying new cuisines, there's something about the experience of enjoying a good meal that can really lift our spirits. And let's not forget about the power of dessert - nothing beats indulging in a decadent chocolate cake or a scoop of your favorite ice cream.
+>
+> Now, let's shift our focus to entertainment. Whether it's watching a hilarious comedy, dancing to our favorite music, or getting lost in a good book, there are so many forms of entertainment that can bring us joy and help us escape from the stresses of everyday life.
+>
+> And then there's the beauty of nature. Getting outside and exploring the world around us can be such a refreshing and rejuvenating experience. Whether it's hiking through the mountains, lounging on the beach, or simply taking a walk through the park, nature has a way of reminding us of the beauty and wonder of the world we live in.
+>
+> Last but not least, let's talk about the power of human connection. Spending time with loved ones, making new friends, or simply striking up a conversation with a stranger can all bring us so much happiness and remind us of the importance of community and connection.
+>
+> In the end, life is all about balance. There will always be challenges and struggles, but it's important to focus on the positive things in life and find joy in the small things. So let's spread some positivity and bring a little bit of happiness into the world!
+>
+> **~ ChatGPT Mar 23 Version, 2023**
+
+Thank you for your time. More quality content like this 👆 coming soon

@@ -1,38 +1,23 @@
-# create-svelte
+# Spiderclam website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+I went full pleb and used sveltekit (static) and tailwind. It was mildly enjoyable.
 
-## Creating a project
+Bye.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Structure
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- `npm run gen:post 'post title here'` to scaffold a post (boilerplate)
+- Blog content goes in `content/blog`. Directory name equals slug. index.svx must exist.
+- That's it for now.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Todo
 
-## Developing
+- SEO (see what's missing)
+- [Search](https://www.algolia.com/doc/tools/crawler/netlify-plugin/quick-start/)
+- [analytics](https://piwik.pro/pricing/)
+- Series (multiple parts, single project). Maybe not as a part of "blog" but as a part of a new tutorials section?
+- I got a bit bored at the end there and left some icky code in content.ts. Not a big deal, but should clean before expanding.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## License
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Excluding branding and content: MIT
