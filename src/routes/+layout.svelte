@@ -43,7 +43,7 @@
 		window.removeEventListener('wheel', preventScroll);
 	}
 
-	$: open = true;
+	$: open = false;
 	$: open ? navOpened() : navClosed();
 </script>
 
