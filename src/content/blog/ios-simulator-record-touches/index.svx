@@ -1,0 +1,18 @@
+---
+title: iOS simulator record touches
+date: '2023-05-12'
+description: "My thoughts about: iOS simulator record touches"
+excerpt: "aaaa"
+---
+
+This is a very short, but very useful tip.
+
+When recording a video using a simulator you can enable the recording of touches to make the video visually easier to read.
+
+With the simulator open and ready to record, simply open up a terminal and write:
+
+`defaults write com.apple.iphonesimulator ShowSingleTouches 1`
+
+Now your recording will have touches enabled. To disable touches again, simply run this command (setting ShowSingleTouches to 0):
+
+`defaults write com.apple.iphonesimulator ShowSingleTouches 0`
