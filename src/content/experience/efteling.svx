@@ -1,0 +1,9 @@
+---
+title: 'Freelance Software Engineer'
+company: 'Efteling'
+from: '2019-07'
+to: '2020-03'
+tech: React Native, Kotlin, Styled components, Objective-C, Cognito, AWS, Firebase, React Query, Figma
+---
+
+I'm working on the Efteling app using React Native, Kotlin and Swift. Some Java and Objective-C.

@@ -1,0 +1,9 @@
+---
+title: 'Lead Developer'
+company: 'SmartNow'
+from: '2015-11'
+to: '2017-03'
+tech: 
+---
+
+Connected Molecules and Sweebr.

@@ -10,6 +10,12 @@ Bye.
 - Blog content goes in `content/blog`. Directory name equals slug. index.svx must exist.
 - That's it for now.
 
+## Post ideas
+
+- Explain midi parsing (in the browser) by example
+- Explain this very blog and how to make your own
+- Add artstation stuff
+
 ## Todo
 
 - SEO (see what's missing)
@@ -21,3 +27,7 @@ Bye.
 ## License
 
 Excluding branding and content: MIT
+
+for file in \*.png; do convert $file -resize 1290x2796! scaled-$file; done
+
+convert example.png -resize 200x100 example.png

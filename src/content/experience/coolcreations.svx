@@ -1,0 +1,9 @@
+---
+title: 'Software Engineer'
+company: 'CoolCreations'
+from: '2011-01'
+to: '2011-03'
+tech: 
+---
+
+Software engineer. Also worked on design, and an iOS application (objective-c).

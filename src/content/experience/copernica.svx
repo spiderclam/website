@@ -1,0 +1,9 @@
+---
+title: 'Software Engineer'
+company: 'Copernica'
+from: '2011-03'
+to: '2011-08'
+tech: 
+---
+
+Main development, I work on usability and system features.

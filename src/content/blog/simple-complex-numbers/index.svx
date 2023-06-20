@@ -1,0 +1,61 @@
+---
+title: Simple complex numbers
+date: '2023-05-17'
+description: 'It sounds harder than it is'
+---
+
+For a recent project I've found myself having to use complex numbers since the formula I relied on uses them.
+
+The only problem was that I had no idea what a complex number is (feel free to shame me). I started looking for explanations and definitions and they all looked the same:
+
+> A complex number is a number of the form a + bi, where a and b are real numbers, and i is an indeterminate satisfying i2 = −1.
+
+... Uhu. Imaginary, you say. Tell me more.
+
+> The value of i = (√-1). For example, 2+3i is a complex number, where 2 is a real number (Re) and 3i is an imaginary number (Im)
+
+Okay this isn't going to help me. At all.
+
+So to help future me, and perhaps some unlucky randos who find themselves here, I decided to try and simplify.
+
+## Complex numbers for simpletons
+
+Step back, I'll now attempt to explain complex numbers in a way that is easier to understand.
+The only prior knowledge required is some basic coding since I'll be using TypeScript to illustrate some things.
+
+Now, let's piss off some mathematicians! Here's the dumbest explanation I could come up with:
+
+> A complex number is not a number. It's a dictionary of two values that adhere to some constraints.
+
+In code:
+
+```ts
+interface ComplexNumber {
+	a: number; // The "real" number
+	bi: number; // The "Imaginary" number
+}
+```
+
+Only constant `i` can make imaginary numbers.
+
+A complex number is a number with 2 components: real, and imaginary.
+
+- **The real number** represents the amplitude
+- **The imaginary number** represents the phase or timing information
+
+It essentially holds 2 values that can be used by a function to _do stuff_.
+
+Imagine a good ol' coordinate plane with a circle on it. The x-axis represents the real values, while the y-axis represents the imaginary values. The origin (0, 0) is at the center of the circle. Each point on the circle corresponds to a complex number.
+
+Now, that `a + bi` equation I mentioned earlier? Here's what it means in our world. The "a" value is the x-coordinate on the circle, indicating the real part of the complex number. The "bi" value is the y-coordinate, representing the imaginary part.
+By plotting these coordinates, we can visualize complex numbers as points on our coordinate plane.
+
+But hold on, why should we bother with these complex numbers? Well, they have some nifty properties that come in handy in various fields like math, physics, and engineering. 
+They help us solve problems involving waves _(that's what I am using them for)_, rotations, electrical circuits, and more. So, they're not just some fancy mathematical voodoo; they have practical applications.
+
+In a nutshell, complex numbers aren't as daunting as they first appear. They're just a mix of real and imaginary parts, nicely packaged as `a + bi`.
+Understanding them opens up a world of possibilities, letting us tackle complex problems with elegance and efficiency.
+
+So, let's embrace the power of complex numbers and let them be our guide through the fascinating realms of math and beyond.
+
+And also let's all collectively dunk on the mathematicians who went with "imaginary" and "complex" as names for these numbers.

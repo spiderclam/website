@@ -2,7 +2,6 @@
 title: iOS simulator record touches
 date: '2023-05-12'
 description: "My thoughts about: iOS simulator record touches"
-excerpt: "aaaa"
 ---
 
 This is a very short, but very useful tip.

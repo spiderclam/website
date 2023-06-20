@@ -1,0 +1,9 @@
+---
+title: 'Freelance Software Engineer'
+company: 'Vandebron'
+from: '2018-09'
+to: '2019-04'
+tech: 
+---
+
+Mainly working with React and React Native. Small amounts of scala.

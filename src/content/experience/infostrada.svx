@@ -1,0 +1,8 @@
+---
+title: 'Senior Software Engineer'
+company: 'Infostrada'
+from: '2015-07'
+to: '2015-11'
+tech: 
+---
+

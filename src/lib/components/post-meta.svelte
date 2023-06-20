@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { ContentDataEntry } from '$lib/server/content';
+	import type { BlogContentDataEntry } from '$lib/server/content';
 
-	export let post: ContentDataEntry;
+	export let post: BlogContentDataEntry;
 </script>
 
 <div class="flex flex-row gap-2 text-sm items-center mb-2 mt-4">

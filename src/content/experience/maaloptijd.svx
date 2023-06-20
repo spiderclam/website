@@ -1,0 +1,9 @@
+---
+title: 'Founder'
+company: 'Maaloptijd'
+from: '2020-03'
+to: '2021-06'
+tech: 
+---
+
+React-Native, React, Firebase, Node.JS, TypeScript, Swift, Objective-C, Kotlin, Java.

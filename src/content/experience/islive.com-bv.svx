@@ -1,0 +1,9 @@
+---
+title: 'Lead Developer'
+company: 'Islive.com BV'
+from: '2011-08'
+to: '2015-07'
+tech: 
+---
+
+Lead developer. Working on several platforms, with multiple languages and technologies both infra and software.

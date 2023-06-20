@@ -1,0 +1,9 @@
+---
+title: 'Front End Lead'
+company: 'Temper'
+from: '2021-05'
+to: '2021-12'
+tech: React Native Web, Expo, WebFlow, Storybook, ElasticSearch, PHP, Laravel, JavaScript, TypeScript
+---
+
+Temper is a platform that connects freelancers with employers. Within my role I was responsible for team management, code quality and a rewrite. I created a new style guide from Figma using Storybook, wrote all components and architectured the new app using React Native web. Additionally, I created a custom WebFlow plugin for search functionality on the landing page and implemented an elasticsearch server and queries for smarter search result. Due to a shift in leadership, uncertainty regarding the company’s future, and frequent colleague departures, I made the decision to pursue new opportunities.

@@ -7,6 +7,41 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 import { createHighlighter } from '@bitmachina/highlighter';
 import preview, { textFormatter } from 'remark-preview';
 
+// All remark plugins go here, regardless of content type.
+const plugins = {
+	readingTimePlugin,
+	slugPlugin,
+	previewPlugin: preview(textFormatter({ length: 250, maxBlocks: 2 })),
+};
+
+// Mapping content types to plugins.
+const plugIndex = {
+	experience: [],
+	blog: [
+		plugins.readingTimePlugin,
+		plugins.slugPlugin,
+		plugins.previewPlugin,
+	]
+};
+
+function composePlugins() {
+	const pluginMap = new Map([]);
+
+	for (let pluginKey in plugins) {
+		pluginMap.set(plugins[pluginKey], plugins[pluginKey]());
+	}
+
+	return function runContentTypePlugins(info, file) {
+		const contentType = file.filename.match(/\/content\/([\w-]+)/)?.[1];
+		
+		if (!contentType) throw new Error('Unable to detect content type.');
+		
+		plugIndex[contentType].forEach((plug) => {
+			pluginMap.get(plug)(info, file);
+		});
+	};
+}
+
 function slugPlugin() {
 	function makeSlug(file) {
 		const m = file.match(/\/([\w-]+)\/index\.(svx|md)$/);
@@ -64,11 +99,7 @@ const config = {
 				highlighter: await createHighlighter({ theme: 'rose-pine-moon' })
 			},
 			extensions: ['.svx'],
-			remarkPlugins: [
-				readingTimePlugin,
-				slugPlugin,
-				preview(textFormatter({ length: 250, maxBlocks: 2 }))
-			],
+			remarkPlugins: [ composePlugins ],
 			smartypants: {
 				dashes: 'oldschool'
 			}

@@ -1,0 +1,9 @@
+---
+title: 'Freelance Senior Software Engineer'
+company: 'iO Digital LTO'
+from: '2020-09'
+to: '2021-02'
+tech: JavaScript, TypeScript, React Native, React, React Admin, Styled Components, React Query, C# .NET, Node.JS, Svelte, Sveltekit
+---
+
+A fun, diverse and complex project that brought together three different CRMs for three different organizations into one coherent system, featuring an admin dashboard, a landing page and a mobile app from scratch. The goal of this project was to allow farmers and gardeners to keep up with news, price trends and share their opinions on important subjects within their areas of interest. Some truly impressive features were built for this project.

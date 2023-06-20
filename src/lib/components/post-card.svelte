@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { ContentDataEntry } from '$lib/server/content';
+	import type { BlogContentDataEntry } from '$lib/server/content';
 	import PostMeta from '$lib/components/post-meta.svelte';
 
-	export let post: ContentDataEntry;
+	export let post: BlogContentDataEntry;
 </script>
 
 <article
