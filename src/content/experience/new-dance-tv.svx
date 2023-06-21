@@ -3,7 +3,7 @@ title: 'Freelance Senior Software Engineer'
 company: 'New Dance TV'
 from: '2021-03'
 to: '2021-08'
-tech: Node.JS, AWS, DynamoDB, Lambda, Serverless
+tech: Node.js, AWS, DynamoDB, Lambda, Serverless
 ---
 
 New Dance TV is a video streaming platform for dance. I was responsible for setting up the API using lambas and Amazon DynamoDB to allow streaming media to the mobile apps. I set up the architecture and a set of rules to allow for fast and optimized querying of the data.

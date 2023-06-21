@@ -3,6 +3,8 @@ title: 'Senior Software Engineer'
 company: 'Tele2 Nederland'
 from: '2018-03'
 to: '2018-10'
-tech: 
+tech: React Native, Styled Components, JS/TS, Jenkins, Fastlane, Bitbucket, OWASP
 ---
+
+For the Tele2 mobile app I worked with React Native and set up a build pipeline using Jenkins and fastlane (company policy). I was responsible for animations, data features, AI chat, authentication and data security (OWASP). Lastly, I set up user feedback channels (bugsnag) and a11y.
 

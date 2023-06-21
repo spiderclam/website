@@ -3,6 +3,7 @@ title: 'Senior Software Engineer'
 company: 'Infostrada'
 from: '2015-07'
 to: '2015-11'
-tech: 
+tech: PHP, Symfony, MySQL, JS, Redis, Vagrant, Git
 ---
 
+My job here was to work on PHP (Symfony) based projects, one example being the Videoland website. After implementing a couple of features and fixing a couple of bugs in roughly I found out that the work didn't appeal to me. On good terms I left after only a few months.

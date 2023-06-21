@@ -1,9 +1,0 @@
----
-title: 'Intern'
-company: 'Merx'
-from: '2008-03'
-to: '2009-02'
-tech: 
----
-
-Learning how to work in a team, with developers, designers and advisers. I was on the development side, and learned graphical design from one of my colleagues.

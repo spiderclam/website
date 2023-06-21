@@ -3,7 +3,7 @@ title: 'Founder'
 company: 'Maaloptijd'
 from: '2020-03'
 to: '2021-06'
-tech: 
+tech: React Native, React, Firebase, Node.js, TS/JS, Swift, Objective-C, Kotlin, Java, Electron 
 ---
 
-React-Native, React, Firebase, Node.JS, TypeScript, Swift, Objective-C, Kotlin, Java.
+Maaloptijd was a complete platform for restaurant delivery and take-out services. It included a dashboard, order screens, mobile app for both customer and delivery, website, invoicing, printing receipts and much more. Shelved due to COVID-19 and running out of funds, it's currently unfortunately not in use anymore.

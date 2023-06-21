@@ -3,7 +3,9 @@ title: 'Software Engineer'
 company: 'CoolCreations'
 from: '2011-01'
 to: '2011-03'
-tech: 
+tech: JS, HTML, CSS, PHP, Zend Framework, Objective-C
 ---
 
-Software engineer. Also worked on design, and an iOS application (objective-c).
+My focus at this company was working on the CMS in PHP using Zend Framework and a mobile app using Objective-C. 
+The company wanted to focus on selling simpler websites and I felt like I wanted more challenging work.
+I left on good terms after they recommended I’d find something more challenging after seeing my code.

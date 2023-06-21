@@ -52,7 +52,7 @@
 
 <header
 	aria-label="Site Header"
-	class="backdrop-blur-xl bg-white/10 sticky top-0 shadow-sm dark:shadow-md"
+	class="backdrop-blur-xl bg-white/10 sticky top-0 shadow-sm dark:shadow-md print:hidden"
 >
 	<section
 		class="container mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-8 lg:px-8"
@@ -160,7 +160,7 @@
 
 <slot />
 
-<footer aria-label="Site Footer">
+<footer aria-label="Site Footer" class="print:hidden">
 	<div
 		class="max-w-screen-xl pt-16 pb-8 mx-auto px-4 sm:px-6 lg:px-8 lg:pt-24 prose prose-slate dark:prose-invert"
 	>
@@ -173,7 +173,8 @@
 				{domain}
 			</span>
 
-			<SocialIcons />
+			<div class=' mt-8 sm:mt-0'><SocialIcons />
+			</div>
 		</div>
 	</div>
 </footer>

@@ -3,7 +3,8 @@ title: 'Freelance Software Engineer'
 company: 'SpoonX Studio'
 from: '2012-02'
 to: ''
-tech: React Native, React Native Web, JavaScript, TypeScript, iOS, Expo, Node.JS, React, GraphQL, Blender, Firebase, Android, Figma, CSS, Threejs
+tech: React Native, JS/TS, Expo, Node.js, React, Blender, Firebase, Figma, Threejs, Rust, C#, PHP
 ---
 
-Software and design for mobile, web and beyond. With SpoonX Studio I've had the opportunity to work on a diverse set of projects. MVPs, mobile apps, dashboards, APIs and video streaming services just to name a few. Some of the more notable projects I've worked on have their own entries in this list.
+Software and design for mobile, web and beyond. With SpoonX Studio I've had the opportunity to work on a diverse set of projects. 
+MVPs, mobile apps, dashboards, APIs and video streaming services just to name a few. Some of the more notable projects I've worked on have their own entries in this list.

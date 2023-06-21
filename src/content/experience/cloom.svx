@@ -3,7 +3,7 @@ title: 'Freelance Senior Software Engineer'
 company: 'Cloom'
 from: '2020-09'
 to: '2021-02'
-tech: Node.JS, JavaScript, HTML, CSS, Typescript, Agora, WebRTC, Swift
+tech: Node.js, JS/TS, HTML, CSS, Agora, WebRTC, Swift
 ---
 
 Cloom is platform that offers live video-streamed workouts with a real instructor. I built a POC for full-body tracking on iOS using machine learning and custom quaternion logic for pose validation. I also built the frontend for the web app which included the conference streaming two-way client for both participants and the instructor.

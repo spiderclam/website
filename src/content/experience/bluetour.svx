@@ -3,7 +3,7 @@ title: 'Founder'
 company: 'BlueTour'
 from: '2019-02'
 to: '2023-03'
-tech: React Native, React, Figma, React Admin, Google APIs, Node.JS, Firebase, Objective-C, Java
+tech: React Native, React, Figma, React Admin, Google APIs, Node.js, Firebase, Objective-C, Java
 ---
 
 BlueTour offers immersive tour software for museums, galleries and other venues. It's managed through a dashboard to enable (audio-)tours in multiple languages. It includes audio fingerprinting, indoor navigation and hands-free audio tours.

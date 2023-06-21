@@ -3,7 +3,7 @@ title: 'Freelance Software Engineer'
 company: 'Efteling'
 from: '2019-07'
 to: '2020-03'
-tech: React Native, Kotlin, Styled components, Objective-C, Cognito, AWS, Firebase, React Query, Figma
+tech: React Native, Kotlin, Swift, Styled components, Objective-C, Cognito, AWS, Firebase, React Query, Figma
 ---
 
-I'm working on the Efteling app using React Native, Kotlin and Swift. Some Java and Objective-C.
+One of the more exciting brownfield projects, The Efteling, allowed me to utilise my experience with gps to implement in-park navigation in their app. I also added waiting time (push-)notifications, information about the visitor's stay including tickets and many more features.

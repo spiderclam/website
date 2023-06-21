@@ -3,7 +3,7 @@ title: 'Software Engineer'
 company: 'Copernica'
 from: '2011-03'
 to: '2011-08'
-tech: 
+tech: PHP, Smarty, HTML, CSS, JS, DKIM, Mail
 ---
 
-Main development, I work on usability and system features.
+PHP, Smarty, HTML and CSS development. I worked on DKIM verification in an easy to use dashboard and shared statistics. Brief but educational.

@@ -26,7 +26,7 @@
 			</div>
 		</div>
 
-		<div class="flex-row flex justify-between min-w-full">
+		<div class="flex-row flex justify-between min-w-full print:hidden">
 			<div class="flex flex-col">
 				<!-- Nested if so we always have a left side, so "next" aligns to the right -->
 				{#if data.page.previous}
@@ -47,10 +47,10 @@
 			{/if}
 		</div>
 
-		<hr class="my-4" />
-		<h2 class="mt-0 text-2xl mb-0" role="doc-subtitle">Comments</h2>
+		<hr class="my-4 print:hidden" />
+		<h2 class="mt-0 text-2xl mb-0 print:hidden" role="doc-subtitle">Comments</h2>
 
-		<div id="article-comments">
+		<div id="article-comments" class="print:hidden">
 			<script
 				src="https://utteranc.es/client.js"
 				repo="spiderclam/website"

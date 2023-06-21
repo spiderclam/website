@@ -3,6 +3,9 @@ title: 'Senior Software Engineer'
 company: 'Videodock'
 from: '2017-03'
 to: '2018-03'
-tech: 
+tech: React, JS/TS, React Native, Cordova, Objective-C, Java, Firebase, Chromecast
 ---
 
+My focus as a software engineer at this company was React, React Native, Native (Objective-C and Java) and Cordova. Working on custom players, working with JWPlayer and TheoPlayer and several niche streaming platforms was a lot of fun.
+I’ve worked with a lot of services including Firebase and had the pleasure to work with the Chromecast SDK. 
+Besides that, I’ve helped shape more efficient project workflows (scrum) and technical workflows (branching, CI, CD, reviews etc).

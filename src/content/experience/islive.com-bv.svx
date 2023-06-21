@@ -3,7 +3,11 @@ title: 'Lead Developer'
 company: 'Islive.com BV'
 from: '2011-08'
 to: '2015-07'
-tech: 
+tech: PHP, Node.js, JS, MySQL, Unix, Memcache, Redis, RabbitMQ, Wowza, Nginx, Apache, Wowza, Socket.io, jQuery
 ---
 
 Lead developer. Working on several platforms, with multiple languages and technologies both infra and software.
+
+My responsibilities at this company were just about anything related to the products. 
+Interviewing candidates, solving problems, writing and designing product architecture and code, migrations, database design, tech stack, tech standards, maintaining our (300+) physical servers and our cloud. 
+The vast majority of the legacy code was built in PHP and the newer parts using Node.js. This is where I gained the majority of my UNIX skills, too. 

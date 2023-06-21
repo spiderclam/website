@@ -138,35 +138,37 @@ const data = [
         "to": "Jan 2011",
         "description": "Freelancer. Web development."
     },
-    {
-        "role": "Intern",
-        "company": "Merx",
-        "from": "Mar 2008",
-        "to": "Feb 2009",
-        "description": "Learning how to work in a team, with developers, designers and advisers. I was on the development side, and learned graphical design from one of my colleagues."
-    }
+    // {
+    //     "role": "Intern",
+    //     "company": "Merx",
+    //     "from": "Mar 2008",
+    //     "to": "Feb 2009",
+    //     "description": "Learning how to work in a team, with developers, designers and advisers. I was on the development side, and learned graphical design from one of my colleagues."
+    // }
 ];
+
 import fs from 'fs';
 
-const dateMap = {
-    'Jan': '01',
-    'Feb': '02',
-    'Mar': '03',
-    'Apr': '04',
-    'May': '05',
-    'Jun': '06',
-    'Jul': '07',
-    'Aug': '08',
-    'Sep': '09',
-    'Oct': '10',
-    'Nov': '11',
-    'Dec': '12',
-};
+function carefulThisOverwritesYourExperienceFiles() {
+    const dateMap = {
+        'Jan': '01',
+        'Feb': '02',
+        'Mar': '03',
+        'Apr': '04',
+        'May': '05',
+        'Jun': '06',
+        'Jul': '07',
+        'Aug': '08',
+        'Sep': '09',
+        'Oct': '10',
+        'Nov': '11',
+        'Dec': '12',
+    };
 
-data.forEach((item) => {
-    const [fromMonth, fromYear] = item.from.split(' ');
-    const [toMonth, toYear] = item.to.split(' ');
-    const tpl = `---
+    data.forEach((item) => {
+        const [fromMonth, fromYear] = item.from.split(' ');
+        const [toMonth, toYear] = item.to.split(' ');
+        const tpl = `---
 title: '${item.role}'
 company: '${item.company}'
 from: '${fromYear}-${dateMap[fromMonth]}'
@@ -175,6 +177,7 @@ tech: ${item.tech ?? ''}
 ---
 
 ${item.description}`;
-    
-    fs.writeFileSync(`./src/content/experience/${item.company.replaceAll(' ', '-').toLowerCase()}.svx`, tpl);
-});
+
+        fs.writeFileSync(`./src/content/experience/${item.company.replaceAll(' ', '-').toLowerCase()}.svx`, tpl);
+    });
+}

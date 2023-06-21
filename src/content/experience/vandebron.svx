@@ -3,7 +3,7 @@ title: 'Freelance Software Engineer'
 company: 'Vandebron'
 from: '2018-09'
 to: '2019-04'
-tech: 
+tech: React Native, AngularJS, Redis, React, Scala, emotion, Storybook
 ---
 
-Mainly working with React and React Native. Small amounts of scala.
+For Vandebron I rebuilt the energy sources search, reworked most of the customer dashboard, added new features such as viewing energy consumption, added API endpoints and set up the EV mobile app plotting out live charging points on a map including clustering, distance and cost.
