@@ -19,6 +19,9 @@ Bye.
 ## Todo
 
 - SEO (see what's missing)
+- Download button for CV (About page)
+- Domain
+- [RSS](https://www.npmjs.com/package/sveltekit-rss)
 - [Search](https://www.algolia.com/doc/tools/crawler/netlify-plugin/quick-start/)
 - [analytics](https://piwik.pro/pricing/)
 - Series (multiple parts, single project). Maybe not as a part of "blog" but as a part of a new tutorials section?

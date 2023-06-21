@@ -22,7 +22,8 @@
 	</p>
 	<h2>What is a spiderclam?</h2>
 	<p>
-		You ask too many questions. Also Lorem ipsum dolor sit amet consectetur adipisicing elit.
+		You ask too many questions. In any case, a lot of people have trouble spelling my name (Overdijk) so I picked this as a nickname.
+		Also Lorem ipsum dolor sit amet consectetur adipisicing elit.
 		Suscipit adipisci, ipsam quos consequuntur hic eveniet at obcaecati explicabo ratione ipsa sed
 		sint, cupiditate quis aliquam velit rem culpa nesciunt facere.
 	</p>
