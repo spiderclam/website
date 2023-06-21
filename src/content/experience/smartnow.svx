@@ -3,7 +3,7 @@ title: 'Lead Developer'
 company: 'SmartNow'
 from: '2015-11'
 to: '2017-03'
-tech: JS/TS, AngularJS, Aurelia, sails.js, Wetland, Heroku, Netlify
+tech: JS/TS, AngularJS, Aurelia, sails.js, Wetland, Heroku, Netlify, sails.js
 ---
 
-Previously called Sweebr and Connect Molecules. Here I set up most of the backend and frontend. This included CI, CD, database and infrastructure. It was built using Aurelia, sails.js, Wetland and hosted on heroku and netlify. I also helped form the development team by conducting interviews. For sweebr I was active in maintaining and solving bugs. As lead developer I managed workload, tech decisions and reviews as well as reporting to management. A lot of the work was open source and can still be found [on Github under @SpoonX](https://github.com/orgs/SpoonX/repositories?q=aurelia&type=all&language=&sort=). 
+Previously called Sweebr and Connected Molecules. Here I set up most of the backend and frontend. This included CI, CD, database and infrastructure. It was built using Aurelia, sails.js, Wetland and hosted on heroku and netlify. I also helped form the development team by conducting interviews. For sweebr I was active in maintaining and solving bugs. As lead developer I managed workload, tech decisions and reviews as well as reporting to management. A lot of the work was open source and can still be found [on Github under @SpoonX](https://github.com/orgs/SpoonX/repositories?q=aurelia&type=all&language=&sort=). 

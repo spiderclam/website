@@ -20,7 +20,7 @@ Bye.
 
 - SEO (see what's missing)
 - Download button for CV (About page)
-- Domain
+- Education
 - [RSS](https://www.npmjs.com/package/sveltekit-rss)
 - [Search](https://www.algolia.com/doc/tools/crawler/netlify-plugin/quick-start/)
 - [analytics](https://piwik.pro/pricing/)

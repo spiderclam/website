@@ -8,3 +8,4 @@ tech: React Native, JS/TS, Expo, Node.js, React, Blender, Firebase, Figma, Three
 
 Software and design for mobile, web and beyond. With SpoonX Studio I've had the opportunity to work on a diverse set of projects. 
 MVPs, mobile apps, dashboards, APIs and video streaming services just to name a few. Some of the more notable projects I've worked on have their own entries in this list.
+Also I designed and built [this beautiful website](https://spiderclam.dev/).
