@@ -95,6 +95,11 @@
 		<p>
 			My goal is to always keep learning and try new things. It's been really exciting and successful for me so far, and
 			I definitely want to keep that energy going.
+			</p>
+		<p>
+			After working as a freelance developer for several years, I've reached a point where I want to focus on building something that stands the test of time. 
+			While freelancing has its own rewards, I'm seeking a deeper sense of fulfillment that extends beyond individual projects.
+			I aspire to create something impactful and long-lasting, leaving a lasting mark in my professional journey.
 		</p>
 
 		<div class='print:break-inside-avoid'>
