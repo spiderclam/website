@@ -1,0 +1,22 @@
+---
+title: I made a song
+date: '2023-06-21'
+description: "I made a song and took it too far with the visualizations"
+---
+
+Actually, I made a song a bit over a year ago. And then I took it too far with the visualizations because my inner geek took over.
+
+What happened is that after writing, playing and recording the song I wasn't done yet. I wanted to go further and so I also wrote a midi parser that runs in the browser. 
+This seemed cool because that way you can see how I play it! [You can check it out here by the way, it's still up](https://seven-stages-of-lief.netlify.app/).
+
+I then went ahead and wrote another midi parser in c# because I felt like it. I couldn't stop myself and used unity to then programmatically render a keyboard and do the same thing, but in 3d.
+
+That one can be viewed here:
+
+<div class="flex justify-center">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8L7TApGt0fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+Maybe some day I'll write about how midi works and why it is so much fun to write parsers.
+
+Maybe I won't. If you somehow end up reading this and think that I should, just leave a comment!

@@ -1,0 +1,51 @@
+---
+title: Distance between vectors
+date: '2023-06-18'
+description: "My thoughts about: Distance between vectors"
+---
+
+This is the second installment of _"stuff I wrote before but I really want to have on my own website"_. I wrote this in 2020 and I still find it useful to refresh my memory every now and then.
+
+I’m no math man, so don’t @ me. Unity has some cool methods that perform basic operations, but from time to time I want to understand what it actually does. This is one such example.
+
+To find the distance between two vectors you need the following formula:
+
+> √((vx-kx)²+(vy-ky)²+(vz-kz)²)
+
+Let’s break it down using an example where we have two vectors v and k.
+
+v = (0, 0, 0) and k = (3, 4, 0)
+
+Giving us:
+
+- √((0–3)²+(0–4)²+(0–0)²)
+- √((–3)²+(–4)²+(0)²)
+- √(9+16+0)
+- √25
+
+**Distance = 5**
+
+## Sooo, code?
+
+Sure. Here’s how you could implement your very own distance function:
+
+```csharp
+public class BigMathMan
+{
+    public float Square(float value)
+    {
+        return value * value;
+    }
+
+    public float Distance(Vector3 from, Vector3 to)
+    {
+        return Mathf.Sqrt(
+            Square(from.x - to.x) +
+            Square(from.y - to.y) +
+            Square(from.z - to.z)
+        );
+    }
+}
+```
+
+Or if you're using Unity just use Vector3.Distance() I guess. But now you know!
