@@ -17,6 +17,9 @@ const plugins = {
 // Mapping content types to plugins.
 const plugIndex = {
 	experience: [],
+	gallery: [
+		plugins.slugPlugin,
+	],
 	blog: [
 		plugins.readingTimePlugin,
 		plugins.slugPlugin,
@@ -35,6 +38,7 @@ function composePlugins() {
 		const contentType = file.filename.match(/\/content\/([\w-]+)/)?.[1];
 		
 		if (!contentType) throw new Error('Unable to detect content type.');
+		if (!plugIndex[contentType]) throw new Error(`Unknown content type: ${contentType}`);
 		
 		plugIndex[contentType].forEach((plug) => {
 			pluginMap.get(plug)(info, file);

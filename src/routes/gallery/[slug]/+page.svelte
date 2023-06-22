@@ -11,7 +11,7 @@
 	<meta name="description" content={data.content.meta.description} />
 </svelte:head>
 
-<PageContainer size="small">
+<PageContainer size="huge">
 	<article>
 		<div class="text-slate-800 dark:text-slate-200 text-lg min-w-full">
 			<h1 class="mt-0 mb-0">{data.content.meta.title}</h1>
@@ -19,11 +19,15 @@
 				{data.content.meta.description}
 			</span>
 
-			<PostMeta post={data.content} />
-
 			<div class="mt-8">
 				<svelte:component this={data.component} />
 			</div>
+
+			{#if data.content.meta.generated}
+				{#each data.content.meta.images as image}
+					<img src={image} class='rounded-lg' alt=''>
+				{/each}
+			{/if}
 		</div>
 
 		<div class="flex-row flex justify-between min-w-full print:hidden mt-16">
@@ -32,7 +36,7 @@
 				{#if data.page.previous}
 					<strong class="text-lg">Previous</strong>
 					<a href={data.page.previous.slug}
-						>{data.page.previous.meta.title} ({data.page.previous.meta.readingTime.text})</a
+						>{data.page.previous.meta.title}</a
 					>
 				{/if}
 			</div>
@@ -41,7 +45,7 @@
 				<div class="flex flex-col text-right">
 					<strong class="text-lg">Next up</strong>
 					<a href={data.page.next.slug}
-						>{data.page.next.meta.title} ({data.page.next.meta.readingTime.text})</a
+						>{data.page.next.meta.title}</a
 					>
 				</div>
 			{/if}

@@ -5,9 +5,9 @@ description: 'My thoughts about: Unity Vector3.Dot, what?'
 ---
 
 <script>
-import img1 from './img1.webp'; 
-import img2 from './img2.webp'; 
-import img3 from './img3.webp'; 
+import img1 from './img1.webp';
+import img2 from './img2.webp';
+import img3 from './img3.webp';
 </script>
 
 This is the first installment of _"stuff I wrote before but I really want to have on my own website"_. I wrote this in 2020 and I still find it useful to refresh my memory every now and then.
@@ -38,13 +38,21 @@ One of the applications for this is to find out if a point is in front of or beh
 
 If you look at the examples again you’ll see the values 14, -4 and 0. The dot product correlates to the relative position the two vectors have to each other. To make it easier to understand I’ve whipped up these dank images:
 
-<div class="grid grid-cols-3 gap-x-4">
-  <div class="rounded-md bg-slate-50"><img src={img1} /></div>
-  <div class="rounded-md bg-slate-50"><img src={img2} /></div>
-  <div class="rounded-md bg-slate-50"><img src={img3} /></div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="rounded-md bg-slate-50">
+        <img class="h-auto max-w-full rounded-lg" src={img1} alt="">
+    </div>
+    <div class="rounded-md bg-slate-50">
+        <img class="h-auto max-w-full rounded-lg" src={img2} alt="">
+    </div>
+    <div class="rounded-md bg-slate-50">
+        <img class="h-auto max-w-full rounded-lg" src={img3} alt="">
+    </div>
 </div>
 
-From left to right, the dot products for these vectors are 14, -4 and 0. A positive value (14) shows us that the vectors are facing the same way. A negative value tells us they’re facing near opposite directions and a 0 value tells us they’re perpendicular to each other.
+From first to last, the dot products for these vectors are 14, -4 and 0 respectively. A positive value (14) shows us that the vectors are facing the same way as is illustrated by the image. A negative value tells us they’re facing near opposite directions and a 0 value tells us they’re perpendicular to each other.
+
+This is a very fast calculation to perform allowing for a quick direction check, which comes in handy at 60+ fps.
 
 ## All right. Pretty dumb but whatever
 

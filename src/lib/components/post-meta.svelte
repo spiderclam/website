@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { BlogContentDataEntry } from '$lib/server/content';
+	import type { BlogContentDataEntry } from '$lib/server/blog';
 
 	export let post: BlogContentDataEntry;
 </script>

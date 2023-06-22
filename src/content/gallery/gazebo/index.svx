@@ -1,0 +1,9 @@
+---
+title: Gazebo
+description: 'A pretend art test for a job application.'
+date: '2023-06-15'
+thumbnail: '1.jpg'
+generated: true
+---
+
+Gazebo model designed, modelled, sculpted, unwrapped, textured and then rendered in unreal engine.

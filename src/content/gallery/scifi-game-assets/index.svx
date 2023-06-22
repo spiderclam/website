@@ -1,0 +1,9 @@
+---
+title: 'Props for Sci-fi lab'
+description: Sci-Fi props
+date: '2023-06-15'
+thumbnail: 'images/vials-1.png'
+generated: true
+---
+
+Two more recent props I've worked on for a larger medical unit environment. Texturing isn't final, only applied for the sake of renders.

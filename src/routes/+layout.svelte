@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import logo from '$lib/assets/logo.svg';
 	import { browser } from '$app/environment';
 	import { domain } from '$lib/config';
@@ -7,6 +8,23 @@
 	import SocialIcons from '$lib/components/social-icons.svelte';
 
 	import '../app.css';
+
+	let container: HTMLElement;
+
+	onMount(() => {
+		if (typeof IntersectionObserver !== 'undefined') {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					if (!entries[0].isIntersecting) open = false;
+				},
+				{ rootMargin: `0px 0px 0px 0px` }
+			);
+
+			observer.observe(container);
+
+			return () => observer.unobserve(container);
+		}
+	});
 
 	function menuClick(event: Event) {
 		event.preventDefault();
@@ -52,7 +70,7 @@
 
 <header
 	aria-label="Site Header"
-	class="backdrop-blur-xl bg-white/10 sticky top-0 shadow-sm dark:shadow-md print:hidden"
+	class="backdrop-blur-xl bg-white/10 sticky top-0 z-10 shadow-sm dark:shadow-md print:hidden"
 >
 	<section
 		class="container mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-8 lg:px-8"
@@ -67,7 +85,7 @@
 				<ul class="flex items-center gap-6 text-sm font-serif">
 					<li>
 						<a
-							class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
+							class="text-gray-600 hover:underline dark:text-slate-200 duration-200 transition-colors hover:text-slate-900 dark:hover:text-white"
 							href="/blog"
 						>
 							Blog
@@ -75,15 +93,15 @@
 					</li>
 					<li>
 						<a
-							class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
-							href="/stuff"
+							class="text-gray-600 hover:underline dark:text-slate-200 duration-200 transition-colors hover:text-slate-900 dark:hover:text-white"
+							href="/gallery"
 						>
-							Stuff
+							Gallery
 						</a>
 					</li>
 					<li>
 						<a
-							class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
+							class="text-gray-600 hover:underline dark:text-slate-200 duration-200 transition-colors hover:text-slate-900 dark:hover:text-white"
 							href="/about"
 						>
 							About
@@ -96,6 +114,7 @@
 				<button
 					on:click={menuClick}
 					class="block rounded bg-slate-100 p-2.5 text-slate-600 transition hover:text-slate-600/75 dark:bg-slate-800 dark:text-white dark:hover:text-white/75 md:hidden"
+					bind:this={container}
 				>
 					<span class="sr-only">Toggle menu</span>
 					<svg
@@ -118,12 +137,12 @@
 			id="mobile-menu"
 			transition:slide
 			aria-label="Site Nav"
-			class="md:hidden py-2 px-4 sm:px-8 lg:px-8 shadow-t shadow shadow-slate-800 backdrop-blur-xl bg-slate-700/50"
+			class="md:hidden py-2 px-4 sm:px-8 lg:px-8 shadow-t shadow bg-white/50 dark:shadow-slate-800 backdrop-blur-xl dark:bg-slate-700/50"
 		>
 			<ul class="flex flex-col gap-2 text-sm font-serif p-2">
-				<li class="p-2">
+				<li class="p-2 bg-red">
 					<a
-						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
+						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400 block dark:hover:text-white"
 						href="/"
 					>
 						Home
@@ -131,7 +150,7 @@
 				</li>
 				<li class="p-2">
 					<a
-						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
+						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400 block dark:hover:text-white"
 						href="/blog"
 					>
 						Blog
@@ -139,15 +158,15 @@
 				</li>
 				<li class="p-2">
 					<a
-						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
-						href="/stuff"
+						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400 block dark:hover:text-white"
+						href="/gallery"
 					>
-						Stuff
+						Gallery
 					</a>
 				</li>
 				<li class="p-2">
 					<a
-						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400"
+						class="text-slate-600 dark:text-slate-200 duration-200 transition-colors hover:text-slate-400 block dark:hover:text-white"
 						href="/about"
 					>
 						About
@@ -173,8 +192,7 @@
 				{domain}
 			</span>
 
-			<div class=' mt-8 sm:mt-0'><SocialIcons />
-			</div>
+			<div class=" mt-8 sm:mt-0"><SocialIcons /></div>
 		</div>
 	</div>
 </footer>

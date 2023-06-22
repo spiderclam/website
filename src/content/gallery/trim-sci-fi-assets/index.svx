@@ -1,0 +1,18 @@
+---
+title: Trim-sheet based Sci-fi TD assets
+description: 'Modular scifi tower defence kit made ready for use in unreal engine 5.'
+date: '2023-06-15'
+thumbnail: 'example.png'
+generated: true
+---
+
+Modular scifi tower defence kit made ready for use in unreal engine 5.
+
+My goal was to see how far I could go in terms of optimization. So I created a trim sheet and modelled a kit. I stopped after 33 pieces, but a lot more could be made, especially with the vertex painting in place.
+- 33 unique pieces
+- Made for mobile
+- Single trim sheet (2k, packed rougness, AO and metallic into single texture)
+- Vertex painted primary color, secondary color and emission for optional variations
+- Rigged and animated turrets
+- Low poly count (8623 tris total)
+Most importantly: it was fun!

@@ -1,0 +1,9 @@
+---
+title: Sci-Fi Keycards
+description: 'A concept prop for a VR game. Multiple levels of clearance as collectible keycards.'
+date: '2023-06-15'
+thumbnail: 'Main1.png'
+generated: true
+---
+
+A concept prop for a VR game. Multiple levels of clearance as collectible keycards.

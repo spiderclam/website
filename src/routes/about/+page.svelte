@@ -13,6 +13,7 @@
 	<title>{title('About')}</title>
 	<meta name='description' content='About Spiderclam' />
 </svelte:head>
+
 <PageContainer size='small'>
 	<div class='print:text-base print-container'>
 		<div class='flex justify-center'>

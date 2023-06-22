@@ -18,19 +18,18 @@ Bye.
 
 ## Todo
 
+- I got a bit bored at the end there and left some icky code in content.ts. Not a big deal, but should clean before expanding.
+- Add education to about page
+- Add "back" button to blog posts and gallery
+- srcset for images
+- Add "see all" button to home for latest blog posts
+- Pagination for blog posts and gallery
 - SEO (see what's missing)
-- Download button for CV (About page)
-- Education
 - [RSS](https://www.npmjs.com/package/sveltekit-rss)
 - [Search](https://www.algolia.com/doc/tools/crawler/netlify-plugin/quick-start/)
 - [analytics](https://piwik.pro/pricing/)
 - Series (multiple parts, single project). Maybe not as a part of "blog" but as a part of a new tutorials section?
-- I got a bit bored at the end there and left some icky code in content.ts. Not a big deal, but should clean before expanding.
 
 ## License
 
 Excluding branding and content: MIT
-
-for file in \*.png; do convert $file -resize 1290x2796! scaled-$file; done
-
-convert example.png -resize 200x100 example.png

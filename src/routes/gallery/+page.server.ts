@@ -1,10 +1,10 @@
 import { title } from '$lib/config';
-import { blog } from '$lib/server/blog';
+import { gallery } from '$lib/server/gallery';
 
 /** @type {import('./$types').PageServerLoad} */
 export function load() {
   return {
-    title: title('Blog'),
-    blog: blog.content
+    title: title('Gallery'),
+    gallery: gallery.content
   };
 }

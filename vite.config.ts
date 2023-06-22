@@ -4,5 +4,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	assetsInclude: ["**/*.zip"],
-	plugins: [sveltekit(), imagetools()]
+	plugins: [sveltekit(), imagetools({
+		defaultDirectives: (url) => {
+			return new URLSearchParams({ format: 'webp' })
+		}
+	})]
 });
