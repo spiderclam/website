@@ -3,7 +3,7 @@
 	import type { ReadTimeResults } from 'reading-time';
 
 	export let date: DateInfo;
-	export let readingTime: ReadTimeResults;
+	export let readingTime: ReadTimeResults | undefined = undefined;
 </script>
 
 <div class="flex flex-row gap-2 text-sm items-center mb-2 mt-4">

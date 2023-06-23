@@ -11,6 +11,7 @@ interface GalleryMetadata {
 	generated: boolean;
 	description: string;
 	thumbnail: string;
+	og: string;
 	images: string[];
 	date: string;
 }
@@ -22,9 +23,14 @@ export type GalleryContentDataEntry = BaseContentDataEntry<{}>;
 
 // Make an index of all images used in the gallery. Allows for fuzzy definitions in svx files.
 // Must be literal.
-const thumbs: Record<string, GlobEntry<any>> = import.meta.glob(`$content/gallery/**/*.(png|jpg|jpeg|webp)`, {
-	eager: true,
+const thumbs = import.meta.glob(`$content/gallery/**/*.(png|jpg|jpeg|webp)`, {
+	eager: false,
 	query: { format: 'webp', w: 640, h: 428 }
+});
+
+const ogs = import.meta.glob(`$content/gallery/**/*.(png|jpg|jpeg|webp)`, {
+	eager: false,
+	query: { format: 'webp', w: 1200, h: 630 }
 });
 
 const images: Record<string, GlobEntry<any>> = import.meta.glob(`$content/gallery/**/*.(png|jpg|jpeg|webp)`, {
@@ -45,12 +51,18 @@ for (const imagesKey in images) {
 	imagesIndex[name].push(images[imagesKey].default as any);
 }
 
-// @todo add support for `generated` metadata. Should send along all images in the gallery for automatic page generation.
 export const gallery = buildPagedContent<GalleryMetadata>(
 	import.meta.glob<GlobEntry<GalleryMetadata>>('$content/gallery/**/index.svx', { eager: true }),
-	(data, [file]) => {
+	async (data, [file], table) => {
+		const imageKey = path.join(path.parse(file).dir, data.meta.thumbnail);
+		const [thumb, og] = [
+			await thumbs[imageKey]() as GlobEntry<any>,
+			await ogs[imageKey]() as GlobEntry<any>,
+		];
+
 		return {
-			thumbnail: (thumbs[path.join(path.parse(file).dir, data.meta.thumbnail)]).default,
+			thumbnail: thumb.default,
+			og: og.default,
 			images: imagesIndex[data.slug],
 		};
 	}

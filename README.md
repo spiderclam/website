@@ -18,8 +18,6 @@ Bye.
 
 ## Todo
 
-- Add education to about page
-- Add "back" button to blog posts and gallery
 - Add latest "gallery" entries to landing page
 - srcset for images
 - Add 404 page
@@ -28,7 +26,9 @@ Bye.
 - Add og tags for gallery (image, primarily.)
 - Pagination for blog posts and gallery
 - Move to spaces.
+- Add "back" button to blog posts and gallery
 - SEO (see what's missing)
+- Add education to about page
 - [RSS](https://www.npmjs.com/package/sveltekit-rss)
 - [Search](https://www.algolia.com/doc/tools/crawler/netlify-plugin/quick-start/)
 - [analytics](https://piwik.pro/pricing/)

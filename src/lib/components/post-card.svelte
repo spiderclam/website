@@ -18,7 +18,6 @@
 		<PostMeta
 			readingTime={post.meta.readingTime}
 			date={post.meta.date}
-			dateFormatted={post.meta.dateFormatted}
 		/>
 
 		<p class="mt-4 mb-2 text-sm leading-relaxed line-clamp-3">

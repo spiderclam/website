@@ -22,7 +22,6 @@
 			<PostMeta
 				readingTime={data.content.meta.readingTime}
 				date={data.content.meta.date}
-				dateFormatted={data.content.meta.dateFormatted}
 			/>
 
 			<div class="mt-8">

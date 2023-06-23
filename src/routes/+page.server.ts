@@ -5,6 +5,6 @@ import { title } from '$lib/config';
 export const load = async () => {
   return {
     title: title('Landing'),
-    blog: blog.content.slice(0, 3), // make posts available on the client
+    blog: (await blog.content).slice(0, 3), // make posts available on the client
   };
 };

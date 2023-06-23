@@ -29,11 +29,24 @@ export function sortedEntries(imported: Record<string, GlobEntry<any>>) {
 export class ContentTable<T extends { slug: string }> {
 	private _index: Record<string, T> = {};
 
+	private _loading: Promise<any>[] = [];
+
 	constructor(private _data: T[] = []) {
 	}
 
-	get content(): T[] {
-		return this._data;
+	get content() {
+		return Promise.all(this._loading).then(() => this._data);
+	}
+
+	public load(x: Promise<any>) {
+		this._loading.push(x);
+		
+		x.then(() => {
+			const index = this._loading.indexOf(x);
+			if (index !== -1) {
+				this._loading.splice(index, 1);
+			}
+		})
 	}
 
 	public index(entry: T) {
@@ -49,7 +62,7 @@ export class ContentTable<T extends { slug: string }> {
 	}
 }
 
-type BuildCallback<T extends BaseContentDataEntry, G = unknown> = (contentData: T, entry: [fileName: string, entry: GlobEntry<G>]) => void;
+type BuildCallback<T extends BaseContentDataEntry, G = unknown> = (contentData: T, entry: [fileName: string, entry: GlobEntry<G>], table: ContentTable<T>) => Promise<any>;
 
 /**
  * Build a table of paged content from a glob import. 
@@ -83,7 +96,13 @@ export function buildPagedContent<MetaType = unknown, T extends BaseContentDataE
 		} as any;
 
 		if (typeof customMetaCallback === 'function') {
-			Object.assign(contentData.meta, customMetaCallback(contentData, [file, data]));
+			const additionalMeta = customMetaCallback(contentData, [file, data], table);
+			
+			if (typeof additionalMeta.then === 'function') {
+				table.load(additionalMeta.then(meta => Object.assign(contentData.meta, meta)));
+			} else {
+				Object.assign(contentData.meta, additionalMeta);	
+			}
 		}
 
 		table.index(contentData);

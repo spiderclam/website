@@ -9,6 +9,7 @@
 <svelte:head>
 	<title>{data.title}</title>
 	<meta name="description" content={data.content.meta.description} />
+	<meta property="og:image" content={data.content.meta.og} />
 </svelte:head>
 
 <PageContainer size="huge">
@@ -19,7 +20,7 @@
 				{data.content.meta.description}
 			</span>
 
-			<GalleryMeta date={data.content.meta.date} dateFormatted={data.content.meta.dateFormatted} />
+			<GalleryMeta date={data.content.meta.date} />
 
 			<div class="mt-8">
 				<svelte:component this={data.component} />
