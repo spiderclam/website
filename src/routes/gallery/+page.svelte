@@ -1,6 +1,5 @@
 <script lang="ts">
 	import PageContainer from '$lib/components/page-container.svelte';
-	import PostCard from '$lib/components/post-card.svelte';
 
 	export let data;
 </script>

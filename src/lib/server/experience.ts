@@ -1,5 +1,5 @@
 import type { SvelteComponentTyped } from 'svelte';
-import type { GlobEntry } from './content';
+import type { DateInfo, GlobEntry } from './content';
 
 interface ExperienceContentMetadata {
   title: string;
@@ -9,11 +9,6 @@ interface ExperienceContentMetadata {
   to: string;
   tech: string;
   component: SvelteComponentTyped;
-}
-
-interface DateInfo {
-  dateInstance: Date;
-  dateFormatted: string;
 }
 
 interface DatesInfo {

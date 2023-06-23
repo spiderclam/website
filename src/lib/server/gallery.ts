@@ -1,6 +1,6 @@
 import path from 'path';
 import type { GlobEntry } from './content';
-import { buildPagedContent } from './content';
+import { type BaseContentDataEntry, buildPagedContent } from './content';
 
 /*
  * Metadata collected from .svx files.
@@ -18,14 +18,7 @@ interface GalleryMetadata {
 /*
  * Data entry for gallery content.
  */
-export interface GalleryContentDataEntry {
-	slug: string;
-	meta: Omit<GalleryMetadata, 'slug'>;
-	page: {
-		next: null | string;
-		previous: null | string;
-	};
-}
+export type GalleryContentDataEntry = BaseContentDataEntry<{}>;
 
 // Make an index of all images used in the gallery. Allows for fuzzy definitions in svx files.
 // Must be literal.
@@ -40,20 +33,20 @@ const images: Record<string, GlobEntry<any>> = import.meta.glob(`$content/galler
 
 const imagesIndex: Record<string, GlobEntry<GalleryMetadata>[]> = {};
 
-for (let imagesKey in images) {
+for (const imagesKey in images) {
 	const name = imagesKey.match(/^\/src\/content\/gallery\/([^/]+)\//)?.[1] ?? null;
-	
+
 	if (name === null) {
 		throw new Error(`Could not parse gallery name from path: ${imagesKey}`);
 	}
-	
+
 	if (!Array.isArray(imagesIndex[name])) imagesIndex[name] = [];
 
 	imagesIndex[name].push(images[imagesKey].default as any);
 }
 
 // @todo add support for `generated` metadata. Should send along all images in the gallery for automatic page generation.
-export const gallery = buildPagedContent<GalleryContentDataEntry>(
+export const gallery = buildPagedContent<GalleryMetadata>(
 	import.meta.glob<GlobEntry<GalleryMetadata>>('$content/gallery/**/index.svx', { eager: true }),
 	(data, [file]) => {
 		return {

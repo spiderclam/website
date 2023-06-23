@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { BlogContentDataEntry } from '$lib/server/blog';
-	import PostMeta from '$lib/components/post-meta.svelte';
+	import PostMeta from '$lib/components/content-meta.svelte';
 
 	export let post: BlogContentDataEntry;
 </script>
@@ -15,7 +15,11 @@
 			</h3>
 		</a>
 
-		<PostMeta {post} />
+		<PostMeta
+			readingTime={post.meta.readingTime}
+			date={post.meta.date}
+			dateFormatted={post.meta.dateFormatted}
+		/>
 
 		<p class="mt-4 mb-2 text-sm leading-relaxed line-clamp-3">
 			{post.meta.preview}

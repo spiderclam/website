@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PageContainer from '$lib/components/page-container.svelte';
-	import PostMeta from '$lib/components/post-meta.svelte';
+	import GalleryMeta from '$lib/components/content-meta.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -19,13 +19,15 @@
 				{data.content.meta.description}
 			</span>
 
+			<GalleryMeta date={data.content.meta.date} dateFormatted={data.content.meta.dateFormatted} />
+
 			<div class="mt-8">
 				<svelte:component this={data.component} />
 			</div>
 
 			{#if data.content.meta.generated}
 				{#each data.content.meta.images as image}
-					<img src={image} class='rounded-lg' alt=''>
+					<img src={image} class="rounded-lg" alt="" />
 				{/each}
 			{/if}
 		</div>
@@ -35,18 +37,14 @@
 				<!-- Nested if so we always have a left side, so "next" aligns to the right -->
 				{#if data.page.previous}
 					<strong class="text-lg">Previous</strong>
-					<a href={data.page.previous.slug}
-						>{data.page.previous.meta.title}</a
-					>
+					<a href={data.page.previous.slug}>{data.page.previous.meta.title}</a>
 				{/if}
 			</div>
 
 			{#if data.page.next}
 				<div class="flex flex-col text-right">
 					<strong class="text-lg">Next up</strong>
-					<a href={data.page.next.slug}
-						>{data.page.next.meta.title}</a
-					>
+					<a href={data.page.next.slug}>{data.page.next.meta.title}</a>
 				</div>
 			{/if}
 		</div>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PageContainer from '$lib/components/page-container.svelte';
-	import PostMeta from '$lib/components/post-meta.svelte';
+	import PostMeta from '$lib/components/content-meta.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -19,7 +19,11 @@
 				{data.content.meta.description}
 			</span>
 
-			<PostMeta post={data.content} />
+			<PostMeta
+				readingTime={data.content.meta.readingTime}
+				date={data.content.meta.date}
+				dateFormatted={data.content.meta.dateFormatted}
+			/>
 
 			<div class="mt-8">
 				<svelte:component this={data.component} />

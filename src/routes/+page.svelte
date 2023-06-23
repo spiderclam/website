@@ -1,7 +1,6 @@
 <script lang="ts">
 	import PageContainer from '$lib/components/page-container.svelte';
 	import PostCard from '$lib/components/post-card.svelte';
-	import PostMeta from '$lib/components/post-meta.svelte';
 
 	export let data;
 </script>
@@ -22,10 +21,10 @@
 	</p>
 	<h2>What is a spiderclam?</h2>
 	<p>
-		You ask too many questions. In any case, a lot of people have trouble spelling my name (Overdijk) so I picked this as a nickname.
-		Also Lorem ipsum dolor sit amet consectetur adipisicing elit.
-		Suscipit adipisci, ipsam quos consequuntur hic eveniet at obcaecati explicabo ratione ipsa sed
-		sint, cupiditate quis aliquam velit rem culpa nesciunt facere.
+		You ask too many questions. In any case, a lot of people have trouble spelling my name
+		(Overdijk) so I picked this as a nickname. Also Lorem ipsum dolor sit amet consectetur
+		adipisicing elit. Suscipit adipisci, ipsam quos consequuntur hic eveniet at obcaecati explicabo
+		ratione ipsa sed sint, cupiditate quis aliquam velit rem culpa nesciunt facere.
 	</p>
 	<h2 class="mb-4">Latest blog posts</h2>
 	<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">

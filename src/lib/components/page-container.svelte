@@ -10,10 +10,10 @@
 		tiny: ['md:max-w-screen-xl', 'lg:max-w-3xl']
 	};
 
-	$: containerClasses = [
-		'px-8',
-		'md:px-16',
-		'lg:px-20',
+	const containerClasses = [
+		'px-4',
+		'md:px-8',
+		'lg:px-16',
 		'pt-8',
 		'md:pt-16',
 		'container',
