@@ -4,9 +4,9 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && pnpm run gen:cv",
 		"preview": "vite preview",
-		"gen:cv": "pnpm run build && node tools/build-cv.js",
+		"gen:cv": "node tools/build-cv.js",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
