@@ -96,15 +96,17 @@
 		<p>
 			My goal is to always keep learning and try new things. It's been really exciting and successful for me so far, and
 			I definitely want to keep that energy going.
-			</p>
-		<p>
-			After working as a freelance developer for several years, I've reached a point where I want to focus on building something that stands the test of time. 
-			While freelancing has its own rewards, I'm seeking a deeper sense of fulfillment that extends beyond individual projects.
+		</p>
+		<p class='mb-10'>
+			After working as a freelance developer for several years, I've reached a point where I want to focus on building
+			something that stands the test of time.
+			While freelancing has its own rewards, I'm seeking a deeper sense of fulfillment that extends beyond individual
+			projects.
 			I aspire to create something impactful and long-lasting, leaving a lasting mark in my professional journey.
 		</p>
 
 		<div class='print:break-inside-avoid'>
-			<h2 class='mb-2 mt-10'>Languages</h2>
+			<h2 class='mb-2 mt-0'>Languages</h2>
 			<div>
 				<ul class='grid m-0 md:grid-cols-4 grid-cols-2'>
 					<li>Dutch (fluent)</li>
@@ -149,22 +151,28 @@
 						</div>
 					{/if}
 				</div>
-				<hr class='m-0 mt-8 print:mt-2' />
+				<hr class='m-0 mt-8 print:mt-0' />
 			</div>
 		{/each}
-		<h2 class='mt-10 mb-5'>Hobbies</h2>
-		<ul class='grid m-0 lg:grid-cols-2'>
-			<li>Playing guitar, piano, synths and drums</li>
-			<li>3D modeling and texturing</li>
-			<li>Game development (c++ and c#)</li>
-			<li>VR</li>
-			<li><a href='https://medium.com/@r.w.overdijk' target='_blank'>Writing</a></li>
-		</ul>
+		<div class='print:break-inside-avoid'>
+			<h2 class='mt-10 mb-5'>Hobbies</h2>
+			<ul class='grid m-0 lg:grid-cols-2'>
+				<li>Playing guitar, piano, synths and drums</li>
+				<li>3D modeling and texturing</li>
+				<li>Game development (c++ and c#)</li>
+				<li>VR</li>
+				<li><a href='https://medium.com/@r.w.overdijk' target='_blank'>Writing</a></li>
+			</ul>
+		</div>
 	</div>
 </PageContainer>
 
 <style global>
     .description p {
         @apply mt-3;
+    }
+
+    @page {
+        margin: 0.55in 0.5in;
     }
 </style>
