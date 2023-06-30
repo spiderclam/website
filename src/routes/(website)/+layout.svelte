@@ -7,7 +7,7 @@
 	import BackgroundGradient from '$lib/components/background-gradient.svelte';
 	import SocialIcons from '$lib/components/social-icons.svelte';
 
-	import '../app.css';
+	import './app.css';
 
 	let container: HTMLElement;
 
