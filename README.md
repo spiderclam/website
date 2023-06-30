@@ -22,7 +22,7 @@ Bye.
 - srcset for images
 - Add 404 page
 - Add "see all" button to home for latest blog posts
-- Add og tags for blog (read time etc)
+  - Add og tags for blog (read time etc)
 - Add og tags for gallery (image, primarily.)
 - Pagination for blog posts and gallery
 - Move to spaces.

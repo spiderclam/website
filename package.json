@@ -4,17 +4,19 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && pnpm run gen:cv",
+		"build": "vite build && pnpm run build:cv",
 		"preview": "vite preview",
-		"gen:cv": "node tools/build-cv.js",
+		"build:cv": "node tools/build-cv.js",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"gen:post": "node tools/scaffold-post.js"
+		"gen:post": "node tools/scaffold-post.js",
+		"gen:gallery": "node tools/scaffold-gallery.js"
 	},
 	"devDependencies": {
 		"@bitmachina/highlighter": "^1.0.0-alpha.7",
+		"@skeletonlabs/skeleton": "^1.8.0",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
 		"@tailwindcss/typography": "^0.5.9",

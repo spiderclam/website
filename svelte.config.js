@@ -79,7 +79,9 @@ function readingTimePlugin() {
 const config = {
 	kit: {
 		alias: {
-			$content: 'src/content'
+			$content: 'src/content',
+			$media: 'db/media',
+			$db: 'db',
 		},
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.

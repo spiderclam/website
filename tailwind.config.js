@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{html,ts,svelte,md}'],
+	content: [
+		'./src/**/*.{html,ts,svelte,md}',
+		require('path').join(require.resolve(
+				'@skeletonlabs/skeleton'),
+			'../**/*.{html,js,svelte,ts,css}'
+		)
+	],
 	theme: {
 		fontFamily: {
 			sans: ['PT Sans', 'sans-serif'],
@@ -9,6 +15,11 @@ export default {
 		},
 		extend: {}
 	},
-	plugins: [require('@tailwindcss/typography')],
+	plugins: [
+		require(
+			'@tailwindcss/typography',
+			...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
+			),
+	],
 	safelist: ['utterances']
 };
