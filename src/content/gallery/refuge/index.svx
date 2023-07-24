@@ -1,0 +1,11 @@
+---
+title: Réfuge
+description: "Lighting exercise in unreal engine."
+date: '2023-07-24'
+thumbnail: 'images/thumbnail.png'
+generated: true
+---
+
+To practise lighting I made a small scene that I liked. For this I modelled and textured the cottage based on [a concept by Arne Billen](https://www.artstation.com/artwork/49ROeW) using Blender and Substance Painter.
+
+I've also posted this on [Artstation](https://www.artstation.com/artwork/xDePxW).
