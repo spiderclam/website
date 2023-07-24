@@ -6,7 +6,7 @@ export default defineConfig({
 	assetsInclude: ["**/*.zip"],
 	plugins: [sveltekit(), imagetools({
 		defaultDirectives: (url) => {
-			return new URLSearchParams({ format: 'webp' })
+			return new URLSearchParams({ format: 'webp', quality: '100' })
 		}
 	})]
 });
