@@ -1,0 +1,20 @@
+---
+title: TypeScript enum to union
+date: '2023-10-17'
+description: "TIL: enum to union type"
+---
+
+TIL you can make a union type for TypeScript enums by just... Interpolating it. I'm probably the last one to find out, but in case I'm not, check this example.
+
+```ts
+enum Example {
+  First = 'first',
+  Second = 'second',
+  Third = 'third',
+}
+
+// "first" | "second" | "third"
+type ExampleValueType = `${Example}`;
+```
+
+This is useful when you want to for example have a db entity's property be one of an enum's values without using an enum type.
