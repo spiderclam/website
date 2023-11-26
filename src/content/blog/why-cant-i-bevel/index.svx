@@ -1,0 +1,50 @@
+---
+title: Why can't I bevel?
+date: '2023-11-26'
+description: "Why can't I bevel my edge?"
+---
+
+<script>
+import noBevel from './no-bevel.png';
+import selectInterior from './select-interior.png';
+import interior from './interior.png';
+import deleteFaces from './delete-faces.png';
+import success from './success.png';
+</script>
+
+This is a question I had to ask myself too many times and every time it makes me feel dumb.
+
+So I'm messing around in blender, minding my own business and then suddenly I find myself trying to bevel an edge, and it just won't work.
+
+I clean up floating vertices, make sure all edges are connected properly but still find that the bevel seems to have a mind of its own.
+
+<img class="h-auto max-w-full rounded-lg" src={noBevel} alt="no bevel">
+
+It takes me entirely too long to figure out what is going on every single time. So this time I decided to write about it in the hopes of cementing it in my brain once and for all:
+
+## Interior faces are the problem
+
+When the edge is connected to an interior face the bevel doesn't behave as expected. It tries to bevel the interior face's edge, which is not going to work.
+
+## Blender fix: can't bevel edge
+
+First off you need to select interior faces.
+
+<img class="h-auto max-w-full rounded-lg" src={selectInterior} alt="select interior">
+
+Using xray mode you can see that you've indeed selected one or more interior faces.
+
+
+<img class="h-auto max-w-full rounded-lg" src={interior} alt="interior">
+
+Now just go ahead and delete those faces.
+
+<img class="h-auto max-w-full rounded-lg" src={deleteFaces} alt="delete faces">
+
+And try to bevel again.
+
+<img class="h-auto max-w-full rounded-lg" src={success} alt="success">
+
+_Note: don't forget to resharpen the edges_
+
+Woo! Note to future self: stop forgetting about interior faces you big dummy.
