@@ -1,0 +1,53 @@
+---
+title: "Apple Watch app: WristDeck"
+date: '2024-01-03'
+description: "I built an iCloud synced Apple Watch app"
+---
+
+<script>
+import img from './screenshot.png?w=750';
+import img2 from './watch-screenshot.png';
+import img3 from './watch-screenshot2.png';
+import img4 from './watch-screenshot3.png';
+</script>
+
+Actually, I built the app roughly a year ago, but I realized I didn't write about it anywhere. Since I often share my website for job applications and portfolio purposes, I thought it's high time I share this project too. Many things I work on end up forgotten, possibly because I question if they're worth documenting. The same applies to this app, but after a year of personal use, I find it quite cool. So, for all my non-existent readers, here's a post about it.
+
+## The meat
+
+A bit over a year ago I decided that it was time to get fit. So I signed up for a gym membership and started going.
+
+Whilst there I got a training program to follow from a trainer every other month and I started doing those. But I found it really annoying to have to keep looking at my phone to see what exercise I was supposed to do next.
+Not only that, the locker system was a bit annoying. You didn't get to pick your own locker, you just got assigned one. So I had to remember which locker I was assigned, and then remember the number.
+
+Which I didn't. More than once. Because I was not paying attention.
+
+So naturally, instead of paying attention, I spent some time building an app to help me with this instead.
+
+## The app
+
+The app is a straightforward list of decks and slides. Each deck, representing a training schedule for a specific day or a recipe to cook, contains slides (exercises or ingredients and steps) that can be swiped through.
+
+Editing is possible on both the phone and the watch, and data syncs seamlessly through iCloud.
+
+A standout feature is the "quick note," a stored text field where I conveniently save the locker number.
+
+Built entirely in Swift with SwiftUI, the app is not only fast but also lightweight, weighing in at just 2.2MB.
+
+Link to the App store page: [WristDeck](https://apps.apple.com/nl/app/wristdeck/id6444122003)
+
+Some screenshots (just a couple, the rest is on the app store page):
+
+<img class="h-auto max-w-24 rounded-lg" src={img} width="350" alt="interior">
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+    <div class="rounded-md">
+        <img class="h-auto max-w-full rounded-lg" src={img2} alt="">
+    </div>
+    <div class="rounded-md">
+        <img class="h-auto max-w-full rounded-lg" src={img3} alt="">
+    </div>
+    <div class="rounded-md">
+        <img class="h-auto max-w-full rounded-lg" src={img4} alt="">
+    </div>
+</div>

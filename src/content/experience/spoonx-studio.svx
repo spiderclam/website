@@ -2,10 +2,10 @@
 title: 'Freelance Software Engineer'
 company: 'SpoonX Studio'
 from: '2012-02'
-to: ''
+to: '2023-06'
 tech: React Native, JS/TS, Expo, Node.js, React, Blender, Firebase, Figma, Threejs, Rust, C#, PHP
 ---
 
 Software and design for mobile, web and beyond. With SpoonX Studio I've had the opportunity to work on a diverse set of projects. 
 MVPs, mobile apps, dashboards, APIs and video streaming services just to name a few. Some of the more notable projects I've worked on have their own entries in this list.
-Also I designed and built [this beautiful website](https://spiderclam.dev/).
+I've also designed and built [this beautiful website](https://spiderclam.dev/) as my new personal website as well as [this website](https://spoonx.studio/) for my company.

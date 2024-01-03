@@ -48,7 +48,7 @@
 					target='_blank'
 					class='flex gap-x-1'
 				>
-					<span class='sr-only'>Email</span>
+					<span class='sr-only'>Mobile</span>
 
 					<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' class='w-5 h-5'>
 						<path d='M8 16.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75z' />
@@ -120,13 +120,14 @@
 		<div class='print:break-inside-avoid'>
 			<h2 class='mb-2 mt-10'>Tools</h2>
 			<ul class='grid m-0 md:grid-cols-3 grid-cols-2'>
-				<li>Git</li>
+				<li>Git (GitHub, Azure, GitLab)</li>
 				<li>Jest</li>
 				<li>Blender</li>
 				<li>Miro</li>
 				<li>Trello</li>
 				<li>Figma</li>
 				<li>Asana</li>
+				<li>Linear</li>
 				<li>Atlassian (Jira, confluence)</li>
 			</ul>
 		</div>
@@ -161,7 +162,7 @@
 				<li>3D modeling and texturing</li>
 				<li>Game development (c++ and c#)</li>
 				<li>VR</li>
-				<li><a href='https://medium.com/@r.w.overdijk' target='_blank'>Writing</a></li>
+				<li>Writing</li>
 			</ul>
 		</div>
 	</div>
