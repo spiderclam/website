@@ -1,0 +1,11 @@
+---
+title: Desert fox
+description: Modeled and textured desert fox.
+date: '2023-04-22'
+thumbnail: 'images/thumbnail.jpg'
+generated: true
+---
+
+Based on a story idea. This little guy was supposed to be the main character in a short game about a desert fox.
+
+Sculpted a base in blender, remodelled using subd, rigged and then textured in Substance Painter.
