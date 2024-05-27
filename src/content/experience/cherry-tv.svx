@@ -3,11 +3,11 @@ title: 'Senior Software Engineer'
 company: 'Cherry.tv'
 from: '2023-06'
 to: ''
-tech: Next.js, TS, GraphQL (Apollo), Node.js, Nest.js, PostgreSQL, Reddis, Docker, RabbitMQ, Tailwind, React Native, Figma
+tech: Next.js, TS, GraphQL (Apollo), Node.js, Nest.js, PostgreSQL, Reddis, Docker, RabbitMQ, Tailwind, React Native
 ---
 
 _**Content warning**: NSFW, adult entertainment._
 
-Cherry.tv is an adult entertainment platform centered around live video streaming and gamification.
-My responsibilities were primarily the design/architecture of new systems, as well as the implementation.
+Cherry.tv is an adult entertainment platform centered around live video streaming and the gamification of it.
+My responsibilities were primarily the design/architecture of new systems, as well as the implementation. I also maintained the mobile app.
 I implemented and migrated to a new CDP, implemented large new features and worked on improving platform performance and reducing cost.
