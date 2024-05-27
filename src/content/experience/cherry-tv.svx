@@ -3,7 +3,7 @@ title: 'Senior Software Engineer'
 company: 'Cherry.tv'
 from: '2023-06'
 to: ''
-tech: Next.js, TS, GraphQL (Apollo), Node.js, Nest.js, PostgreSQL, Reddis, Docker, RabbitMQ, Tailwind, React Native
+tech: Next.js, TS, GraphQL (Apollo), Node.js, Nest.js, PostgreSQL, Reddis, Docker, RabbitMQ, Tailwind, React Native, Figma
 ---
 
 _**Content warning**: NSFW, adult entertainment._
