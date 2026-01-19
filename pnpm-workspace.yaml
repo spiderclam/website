@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - '@sveltejs/kit'
+  - esbuild
+  - puppeteer
+  - sharp
+  - svelte-preprocess
