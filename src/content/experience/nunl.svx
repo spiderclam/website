@@ -1,0 +1,13 @@
+---
+title: 'Senior Software Engineer'
+company: 'DPG Media (NU.nl)'
+from: '2024-07'
+to: ''
+tech: Node.js, Nest.js, Valkey, Docker, Vue.js, TypeScript, GraphQL, Python, AWS
+---
+
+At NU.nl, I play a multifaceted role that bridges backend and frontend development. 
+My primary focus has been on building a sports-backend soccer match monitor, which ensures real-time goal updates through push notifications. 
+This project involved a complete rebuild of the sports backend, integrating features like goal alerts and tools for editors. 
+
+As part of a feature team, I also contributed to the new video implementation, optimizing for both vertical and horizontal formats. My experience extends to various systems, including a CMS built with Python, as well as tracking and advertising solutions.
