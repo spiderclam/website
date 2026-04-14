@@ -87,7 +87,7 @@
 		</div>
 		<h2 class="mb-2 mt-10">Summary</h2>
 		<p>
-			I'm a Versatile Software Engineer with over 15 years of experience under my belt, based in
+			I'm a Software Engineer with over 15 years of experience under my belt, based in
 			Heerhugowaard, The Netherlands where I happily live with my wife and dog. Most of my recent
 			work has been through SpoonX Studio, a company name I came up with too long ago and I should
 			probably change.
@@ -134,14 +134,14 @@
 			<h2 class="mb-2 mt-10">Tools</h2>
 			<ul class="grid m-0 md:grid-cols-3 grid-cols-2">
 				<li>Git (GitHub, Azure, GitLab)</li>
-				<li>Jest</li>
+				<li>Vitest</li>
 				<li>Miro</li>
 				<li>Maestro</li>
 				<li>Figma</li>
 				<li>Ghostty</li>
 				<li>Blender</li>
 				<li>Linear</li>
-				<li>Atlassian (Jira, confluence)</li>
+				<li>Expo</li>
 			</ul>
 		</div>
 
