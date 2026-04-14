@@ -94,7 +94,8 @@
 		</p>
 		<p>
 			I specialize in Node.js, TypeScript, and React Native but my real strength lies in being
-			versatile. Solutions can be found in many places and I'm not afraid to look for them.
+			versatile. I enjoy exploring new approaches and technologies, while staying pragmatic about
+			applying what already works to ship solid, reliable products.
 		</p>
 		<p>
 			I'm also passionate about contributing to the open source. I've contributed to several
@@ -107,7 +108,7 @@
 		</p>
 		<p>
 			My goal is to always keep learning and try new things. It's been really exciting and
-			successful for me so far, and I definitely want to keep that energy going.
+			successful for me so far, and I definitely want to keep that going.
 		</p>
 		<p class="mb-10">
 			After working as a freelance developer for several years, I've reached a point where I want to
